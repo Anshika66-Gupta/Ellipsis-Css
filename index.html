@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>
+            Applying an ellipsis to multiline text
+        </title>
+        <style>
+            .box{
+                display: flex;
+                flex-direction: row;
+            }
+            .container{
+                width: 35rem;
+                height: 12rem;
+                padding: 1rem;
+                margin: 3rem;
+                padding-bottom: 5rem;
+                background-color: navajowhite;
+            }
+            .text-2{
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .text-3{
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        </style>
+
+    <body>
+        <!--<div class="container">
+            <div class="text">
+                Hey Hi Everyone, Welcome to Geeks For Geeks !! I Hope you all are doing good. Hey Hi Everyone, Welcome to Geeks For Geeks !! I Hope you all are doing good.
+            </div>
+            
+        </div>-->
+        <div class="box">
+            <div class="container">
+                <div class="text-2">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  
+                </div>
+            </div>
+            <div class="container">
+                <div class="text-3">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
